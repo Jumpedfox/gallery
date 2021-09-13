@@ -85,7 +85,7 @@ if (e.target !== lightBoxImage) {
 }});
 
 window.addEventListener('keydown', (e)=>{
-if (e.code === 'Escape' || e.code === 'ArrowUp' || e.code === 'ArrowDown')
+if (e.code === 'Escape' || e.code === 'ArrowUp' || e.code === 'ArrowDown') {
 lightBox.classList.remove('is-open');
 lightBoxImage.removeAttribute('src', e.target.dataset.source);
-});
+}});
